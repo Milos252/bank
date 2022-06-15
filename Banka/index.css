@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input{
+    margin: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    width: 300px;
+    padding: 10px;
+}
+
+h1, label{
+    user-select: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+#container {
+    background-color: #ffebcd;
+    border: 5px solid #ffcf87;
+    padding: 20px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ffcf87;
+    cursor: pointer;
+}
+
+p {
+    color: red;
+    visibility: hidden;
+}
+
+#signup {
+    display: flex;
+    justify-content: space-between;
+}

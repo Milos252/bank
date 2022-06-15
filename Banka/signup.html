@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="signup.css" />
+        <title>Sign up!</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Sign up:</h1>
+            <div id="name-div">
+                <label for="name">Name: <br /></label>
+                <input type="text" name="name" id="name" autocomplete="off" />
+            </div>
+            <div id="password-div">
+                <label for="password">Password: <br /></label>
+                <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    autocomplete="off"
+                />
+            </div>
+            <div id="money-div">
+                <label for="money">Money: <br /></label>
+                <input
+                    type="number"
+                    name="money"
+                    id="money"
+                    autocomplete="off"
+                />
+            </div>
+
+            <div id="btns">
+                <button type="submit">Complete</button>
+                <button type="submit" id="login">Log In</button>
+            </div>
+        </div>
+
+        <script src="signup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+#container, #info, #money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#money, #info {
+    background-color: lemonchiffon;
+    width: 50%;
+    margin: 50px;
+    padding: 50px;
+}
