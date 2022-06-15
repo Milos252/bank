@@ -7,18 +7,22 @@ btn.addEventListener('click', () => {
     let password = document.querySelector('#password').value;
     let money = document.querySelector('#money').value;
 
+    if(username !== "" && password !== "" && money !== ""){
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: username,
+                password: password,
+                money: money,
+            }),
+        });
+        window.location.href = 'index.html';
 
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            name: username,
-            password: password,
-            money: money,
-        }),
-    });
+    }
+
 });
 
 btn2.addEventListener('click', () => {
