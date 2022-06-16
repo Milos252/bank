@@ -1,13 +1,16 @@
 let url = 'https://62a66ad3430ba53411d48b32.mockapi.io/accounts/';
 let btn = document.querySelector('button');
-let btn2 = document.querySelector('#login')
+let btn2 = document.querySelector('#login');
 
 btn.addEventListener('click', () => {
     let username = document.querySelector('#name').value;
     let password = document.querySelector('#password').value;
+    let email = document.querySelector('#email').value;
     let money = document.querySelector('#money').value;
 
-    if(username !== "" && password !== "" && money !== ""){
+    console.log(email);
+
+    if (username !== '' && password !== '' && money !== '') {
         fetch(url, {
             method: 'POST',
             headers: {
@@ -17,14 +20,13 @@ btn.addEventListener('click', () => {
                 name: username,
                 password: password,
                 money: money,
+                email: email,
             }),
-        });
-        window.location.href = 'index.html';
-
+        })
+        window.location.href = '../index.html';
     }
-
 });
 
 btn2.addEventListener('click', () => {
-    window.location.href = 'index.html';
-})
+    window.location.href = '../index.html';
+});

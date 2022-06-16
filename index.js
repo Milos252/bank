@@ -4,8 +4,8 @@ let url = 'https://62a66ad3430ba53411d48b32.mockapi.io/accounts/';
 let input = document.querySelector('#password');
 
 input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter'){
-        btn.click()
+    if (e.key === 'Enter') {
+        btn.click();
     }
 });
 
@@ -19,10 +19,13 @@ btn.addEventListener('click', () => {
         .then((response) => response.json())
         .then((data) => {
             data.forEach((e) => {
-                if (e.name === username && e.password === password) {
-                    window.location.href = 'bank.html';
+                if (
+                    (e.name === username || e.email === username) &&
+                    e.password === password
+                ) {
+                    window.location.href = 'bank/bank.html';
                     loggedIn = true;
-                    sessionStorage.setItem('id', e.id)
+                    sessionStorage.setItem('id', e.id);
                 }
             });
             if (!loggedIn) {
@@ -32,7 +35,7 @@ btn.addEventListener('click', () => {
         .catch((error) => alert(error));
 });
 
-console.log(btn2)
+console.log(btn2);
 btn2.addEventListener('click', () => {
-    window.location.href = 'signup.html';
-})
+    window.location.href = 'signup/signup.html';
+});
