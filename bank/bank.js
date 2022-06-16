@@ -1,7 +1,8 @@
 let url = 'https://62a66ad3430ba53411d48b32.mockapi.io/accounts/';
 
 let id = sessionStorage.getItem('id');
-let loggedIn = sessionStorage.getItem('loggedIn');
+let loggedIn = (sessionStorage.getItem('loggedIn') === 'true');
+
 
 if (loggedIn !== true) {
     window.location.href = '../index.html';
