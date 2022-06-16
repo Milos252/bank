@@ -8,7 +8,6 @@ btn.addEventListener('click', () => {
     let email = document.querySelector('#email').value;
     let money = document.querySelector('#money').value;
 
-    console.log(email);
 
     if (username !== '' && password !== '' && money !== '') {
         fetch(url, {

@@ -25,6 +25,7 @@ btn.addEventListener('click', () => {
                 ) {
                     window.location.href = 'bank/bank.html';
                     loggedIn = true;
+                    sessionStorage.setItem('loggedIn', true)
                     sessionStorage.setItem('id', e.id);
                 }
             });
@@ -35,7 +36,6 @@ btn.addEventListener('click', () => {
         .catch((error) => alert(error));
 });
 
-console.log(btn2);
 btn2.addEventListener('click', () => {
     window.location.href = 'signup/signup.html';
 });

@@ -1,7 +1,11 @@
 let url = 'https://62a66ad3430ba53411d48b32.mockapi.io/accounts/';
 
 let id = sessionStorage.getItem('id');
-console.log(id);
+let loggedIn = sessionStorage.getItem('loggedIn');
+
+if (loggedIn !== true) {
+    window.location.href = '../index.html';
+}
 
 fetch(url + id)
     .then((response) => response.json())
