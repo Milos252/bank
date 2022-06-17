@@ -6,10 +6,10 @@ btn.addEventListener('click', () => {
     let username = document.querySelector('#name').value;
     let password = document.querySelector('#password').value;
     let email = document.querySelector('#email').value;
-    let money = document.querySelector('#money').value;
+    let money = '0';
 
 
-    if (username !== '' && password !== '' && money !== '') {
+    if (username !== '' && password !== '' && email !== '') {
         fetch(url, {
             method: 'POST',
             headers: {
