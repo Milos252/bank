@@ -28,3 +28,24 @@ html::-webkit-scrollbar{
     margin: 50px;
     padding: 50px;
 }
+
+input{
+    margin: 10px;
+    border: none;
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    width: 300px;
+    padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ffcf87;
+    cursor: pointer;
+}
