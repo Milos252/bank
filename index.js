@@ -23,7 +23,7 @@ btn.addEventListener('click', () => {
                     (e.name === username || e.email === username) &&
                     e.password === password
                 ) {
-                    window.location.href = 'bank/bank.html';
+                    window.location.href = 'bank.html';
                     loggedIn = true;
                     sessionStorage.setItem('loggedIn', true)
                     sessionStorage.setItem('id', e.id);
@@ -37,5 +37,5 @@ btn.addEventListener('click', () => {
 });
 
 btn2.addEventListener('click', () => {
-    window.location.href = 'signup/signup.html';
+    window.location.href = 'signup.html';
 });

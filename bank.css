@@ -49,3 +49,7 @@ button{
     background-color: #ffcf87;
     cursor: pointer;
 }
+
+p {
+    color: black;
+}

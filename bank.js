@@ -43,6 +43,11 @@ let setDisplay = () => {
         .then(() => {
             let p = document.querySelector('#money-text');
             p.innerText = money + '$';
+            if (money < 0) {
+                p.style.color = 'red';
+            } else {
+                p.style.color = 'black';
+            }
         });
 };
 
